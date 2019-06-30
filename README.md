@@ -30,17 +30,17 @@ git config --global user.email "seu@email.com"
 
 ### Passo 4 - usando o Git
 
-passo 4.1 - Abrir o Git Bash na pasta do curso que você criou (Windows) ou abrir o Terminal e navegar até a pasta do curso (Ubuntu)
+*Passo 4.1* - Abrir o Git Bash na pasta do curso que você criou (Windows) ou abrir o Terminal e navegar até a pasta do curso (Ubuntu)
 
-passo 4.2 - Digite o comando abaixo para iniciar rum repositório local na sua pasta
+*Passo 4.2* - Digite o comando abaixo para iniciar rum repositório local na sua pasta
 
 ```bash
 git init
 ```
 
-passo 4.3 - Criar um arquivo "helloWorldGit.txt" e digitar dentro "Hello, World!!"
+*Passo 4.3* - Criar um arquivo "helloWorldGit.txt" e digitar dentro "Hello, World!!"
 
-Passo 4.4 - Volte ao bash ou ao terminal e digite 
+*Passo 4.4* - Volte ao bash ou ao terminal e digite 
 
 ```bash
 git status
@@ -55,7 +55,7 @@ $helloWorldGit.txt
 $ nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
 ```
 
-passo 4.5 - Para que os arquivos comecem a ser monitorados, nós precisamos adicioná-los ao Git.  Para isso vamos usar o comando:
+*Passo 4.5* - Para que os arquivos comecem a ser monitorados, nós precisamos adicioná-los ao Git.  Para isso vamos usar o comando:
 
 ```bash
 git add <nomeDoArquivo.extensão>
@@ -67,6 +67,34 @@ Em nosso caso, o comando será:
 git add helloWorldGit.txt
 ```
 
+*Para adicionar TODOS os arquivos, você pode usar o comando "git add ."*
+
 Após isso, vamos checar de novo com "git status"
 
+deve aparecer algo do tipo 
 
+```bash
+No ramo master
+
+No commits yet
+
+Mudanças a serem submetidas:
+  (utilize "git rm --cached <arquivo>..." para não apresentar)
+
+	new file:   helloWorldGit.txt
+
+```
+
+*O snapshot ja foi feito? Já tenho uma cópia da minha versão salva? NÃÃÃÃÃÃOOOOOO*
+
+*Passo 4.6* - Vamos commitar e criar o snapshot do estado atual da nossa pasta. Para isso vamos usar o comando:
+
+```bash
+git commit -m "adicione aqui sua mensagem"
+```
+
+Em nosso caso, o comando será:
+
+```bash
+git commit -m "Meu primeiro commit: Olá Git!"
+```
