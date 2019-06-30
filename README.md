@@ -113,6 +113,8 @@ Agora você deve colocar novos documentos dentro da sua pasta (arquivos de texto
 
 ### Passo 6- Crie um novo repositorio no GitHub
 
+Abra a pasta pelo Bash ou pelo Terminal e digite os comandos abaixo:
+
 ```bash
 git remote add origin https://link.do.repositorio
 git push origin master
@@ -128,5 +130,9 @@ git push origin master
 git fetch
 git pull
 ```
+
 Abra o arquivo que você modificou usando o VsCode e veja suas mudanças.
 
+## Tudo tranquilo até aqui? Bora criar a página usando Jekyll?
+
+[Acesse esta página](./criandoWebPage.md)
