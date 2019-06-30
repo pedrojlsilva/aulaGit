@@ -45,14 +45,14 @@ git init
 ```bash
 git status
 
-$No ramo master
-$No commits yet
-$
-$ Arquivos não monitorados:
-$  (utilize "git add <arquivo>..." para incluir o que será submetido)
-$
-$helloWorldGit.txt
-$ nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+No ramo master
+No commits yet
+
+ Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+helloWorldGit.txt
+ nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
 ```
 
 *Passo 4.5* - Para que os arquivos comecem a ser monitorados, nós precisamos adicioná-los ao Git.  Para isso vamos usar o comando:
@@ -98,3 +98,35 @@ Em nosso caso, o comando será:
 ```bash
 git commit -m "Meu primeiro commit: Olá Git!"
 ```
+
+Se você consultar o status do git, deve aparecer uma mensagem dizendo que não há nada para ser commitado.
+
+## Atividade
+
+Agora você deve colocar novos documentos dentro da sua pasta (arquivos de texto, algum código que você usa, imagens) e criar um novo commit a partir do que você aprendeu até aqui.
+
+
+
+## Usando o GitHub
+
+### Passo 5 - Crie sua conta no GitHub
+
+### Passo 6- Crie um novo repositorio no GitHub
+
+```bash
+git remote add origin https://link.do.repositorio
+git push origin master
+```
+
+### Passo 7 - Alterando seus arquivos no GitHub
+
+**Passo 7.1** - Abra seu arquivo no GitHub e clique no lápis para editar seu código e adicione uma linha de texto qualquer. Em seguida role a página para baixo e commit sua modificação com um comentário. 
+
+**Passo 7.2** - abra o git bash ou o terminal na psta do curso use o comando *fetch* para atualizar o repositorio local e em seguida use o comando *pull* para baixar as atualizações.
+
+```bash
+git fetch
+git pull
+```
+Abra o arquivo que você modificou usando o VsCode e veja suas mudanças.
+
